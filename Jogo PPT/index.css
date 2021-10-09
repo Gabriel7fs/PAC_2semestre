@@ -203,6 +203,87 @@ header{
         opacity: 1;
     }
 }
+/*Jogo*/
+#principal{
+    background-color: #eee;
+}
+
+#titulo{
+    font-family: var(--font-primary);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 3.5rem;
+}
+#jogador_nome, #computador_nome{
+    font-family: var(--font-secundary);
+    
+}
+#computador_nome{
+    text-align: right;
+}
+
+#jogador_pontos, #computador_pontos{
+    font-family: var(--font-action);
+    position: absolute;
+    top: 8px;
+    font-size: 32px;
+}
+
+#jogador_pontos{
+    right: 20px;
+}
+
+#oponente{
+    font-family: var(--font-primary);
+}
+#placar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#jogador, #computador{
+    position: relative;
+    flex-grow: 1;
+    border-radius: 5px;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+}
+
+#jogador{
+    background-color: #155799;
+}
+
+#computador{
+    background-color: #159957;
+}
+
+ul#jogador_escolha, ul#computador_escolha{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+ul#jogador_escolha li, ul#computador_escolha li{
+    display: inline;
+    text-align: center;
+}
+
+ul#jogador_escolha li a, ul#computador_escolha li a{
+    opacity: .2;
+}
+
+ul#jogador_escolha li a:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+ul#jogador_escolha li a img, ul#computador_escolha li a img{
+    max-width: 250px;
+}
 
 /*Contatos*/
 .sessao-contato{
