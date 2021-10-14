@@ -11,7 +11,7 @@
         $cidade = $_POST['cidade'];
         $estado = $_POST['estado'];
 
-        $result = mysqli_querry($conexao, "INSERT INTO usuarios(nome, email, telefone, data_nasc, cidade, estado) VALUES ('$nome', '$email', '$telefone', '$data_nasc', '$cidade', '$estado')");
+        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, email, telefone, data_nasc, cidade, estado) VALUES ('$nome', '$email', '$telefone', '$data_nasc', '$cidade', '$estado')");
     }
 
 ?>
