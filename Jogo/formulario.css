@@ -13,6 +13,38 @@
 /*Plano de fundo*/
 body{
     background-image: linear-gradient( to right, #159957, #155799, rgba(0,0,0,0.8));
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none; 
+}
+
+/*Banner*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background: #159957;  
+    background-color: rgba(0,0,0,0.6);
+}
+  
+li {
+	margin-left: 1rem;
+	float: left;
+}
+  
+li a {
+	font-family: var(--font-primary);
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+  
+li a:hover:not(.active) {
+	opacity: 0.6;
 }
 
 /*Formulário*/
@@ -26,6 +58,7 @@ body{
     padding: 15px;
     border-radius: 5px;
     width: 28%;
+    margin-top: 50px;
 }
 
 fieldset{
