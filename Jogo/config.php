@@ -2,8 +2,8 @@
 
     $dbHost='Localhost';
     $dbUser= 'root';
-    $dbPassword='Xj6m3@rC';
-    $dbName='formulario_jogo';
+    $dbPassword= '0';
+    $dbName='formulario-pac';
 
     $conexao = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
 
