@@ -2,7 +2,7 @@
 
     $dbHost='Localhost';
     $dbUser= 'root';
-    $dbPassword= '0';
+    $dbPassword= '';
     $dbName='formulario-pac';
 
     $conexao = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
