@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -31,7 +33,7 @@
             <div class="banner">
                 <h1>Bem-vindo ao Jogo pedra, papel e tesoura</h1>
                 <p>Angelica Corrêa de Lara Gonçalves, Gabriel Correa,<br> Gabriel Furquim da Silva, Gustavo Lipinski<br> e Vinícius Vicenzo Padilha.</p>
-                <a href="formulario.html" class="menu-link"><button>Login</button></a>
+                <a href="inserirCadastro.php" class="menu-link"><button>Login</button></a>
             </div>
         </header>
         <!----------Menu Lateral---------->

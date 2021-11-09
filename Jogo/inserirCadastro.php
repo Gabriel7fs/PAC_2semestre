@@ -13,7 +13,6 @@
 
         $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, email, telefone, data_nasc, cidade, estado) VALUES ('$nome', '$email', '$telefone', '$data_nasc', '$cidade', '$estado')");
     }
-
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +35,7 @@
         <li><a href="index.html#home">Home</a></li>
     </ul>
     <div class="box">
-        <form action="formulario.php" method="POST">
+        <form action="inserirCadastro.php" method="POST">
             <fieldset>
                 <legend>Cadastro de usuário</legend>
                 <br><br>

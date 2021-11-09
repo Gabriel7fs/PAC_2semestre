@@ -5,6 +5,6 @@
     $dbPassword= '';
     $dbName='formulario-pac';
 
-    $conexao = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
+    $conexao = mysqli_connect($dbHost, $dbUser, $dbPassword, $dbName);
 
 ?>
