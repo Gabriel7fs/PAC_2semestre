@@ -32,7 +32,7 @@
 </head>
 <body>
     <ul>
-        <li><a href="index.html#home">Home</a></li>
+        <li><a href="localhost/pac/index.html#home">Home</a></li>
     </ul>
     <div class="box">
         <form action="inserirCadastro.php" method="POST">
