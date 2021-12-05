@@ -1,5 +1,4 @@
-<?php
-?>
+<?php?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,42 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!--Icone-->
     <link rel="apple-touch-icon" sizes="180x180" href="img">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/mavefavicon.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>Pedra, papel e tesoura</title>
+    <title>TIC-TAC-TOE</title>
 </head>
 <body>
-     <!----------Botão Lateral---------->
-     <div class="container">
-        <div class="hamburguer">
-            <div class="line" id="line1"></div>
-            <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>
-            <span>fechar</span>
-        </div>
-        <!----------Cabeçalho---------->
+    <div class="container">
+            <div class="hamburguer">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+                <span>fechar</span>
+            </div>
         <header id="home">
             <div class="img-wrapper">
                 <img src="img/pankaj-patel-u2Ru4QBXA5Q-unsplash.jpg" alt="">
             </div>
             <div class="banner">
-                <h1>Jogo pedra, papel e tesoura</h1>
-                <p>Angelica Corrêa de Lara Gonçalves, Gabriel Correa,<br> Gabriel Furquim da Silva, Gustavo Lipinski<br> e Vinícius Vicenzo Padilha.</p>
-                <a href="inserirCadastro.php" class="menu-link"><button>Login</button></a>
+                <h1>Bem-vindo ao Jogo <span style="color:aquamarine;">TIC-TAC-TOE</span></h1>
+                <p>Gabriel <span style="color:aqua;">Furquim</span> da Silva, Gustavo <span style="color:aqua;">Lipinski</span><br> e <span style="color:aqua;">Vini</span>cius Vicenzo Padilha.</p>
+                <a href="login.php" class="menu-link"><button>Login</button></a>
+                <a href="inserirCadastro.php" class="menu-link"><button>Cadastrar</button></a>
+                <a href="index.php#principal" class="menu-link"><button>Jogar sem Login</button></a>
             </div>
         </header>
-        <!----------Menu Lateral---------->
+
         <div class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#placar" class="menu-link">Placar</a></li>
-                    <li class="menu-item"><a href="#placar" class="menu-link">Rank</a></li>
-                    <li class="menu-item"><a href="#projetos" class="menu-link">Adversários</a></li>
+                    <li class="menu-item"><a href="ranking.php" class="menu-link">Rank</a></li>
                     <li class="menu-item"><a href="#contatos" class="menu-link">Alunos</a></li>
                 </ul>
             </nav>
@@ -50,8 +47,8 @@
                 <img src="img/android-chrome-192x192.png" >
             </div>
         </div>
-        <!-------------Jogo------------->
-        <div id="principal">
+
+        <section id="principal">
             <h1 id="titulo">Pedra, papel ou tesoura</h1>
             <div id="placar">
                 <div id="jogador">
@@ -75,20 +72,14 @@
                     </div>
             </div>
             <div id="mensagens"><h1>Ganhador</h1></div>
-        </div>
-        <!----------Alunos---------->
+        </section>
+
         <section class="sessao-contato">
             <div class="contato-wrapper">
                 <div class="contato-left"></div>
                 <div class="contato-right">
                     <h1>Participações</h1>
                     <div class="alunos" id="contatos">
-                        <img src="img/angelicafoto.jpeg">
-                            <h3>Angelica Corrêa de Lara Gonçalves - Estrutura e design da página</h3>
-                        </img>
-                        <img src="img/gcorrea.jpeg">
-                            <h3>Gabriel Correa - Imagens da página e produtos</h3>
-                        </img>
                         <img src="img/eufoto.jpg">
                             <h3>Gabriel Furquim da Silva - Código do CSS e HTML</h3>
                         </img>
@@ -102,7 +93,6 @@
                 </div>
             </div>
         </section>
-        <!----------Rodapé---------->
         <footer>
             <div class="footer-content">
                 <p>Copyright &copy; 2021, Team Mavericks - Copia não comédia!</p>
@@ -112,77 +102,7 @@
             <i class="fas fa-arrow-up"></i>
         </a>
     </div>
+        
 </body>
 <script src="script.js"></script>
-<script>
-
-    var jogador_escolha=0
-    var jogadorPontuacao=0
-    var computador_escolha=0
-    var computadorPontuacao=0
-    var ganhador=-1
-    /*
-    pedra=1
-    papel=2
-    tesoura=3
-    */
-    function jogar(escolha) {
-        
-        jogador_escolha = escolha
-        computador_escolha = Math.floor((Math.random() * (3-1+1)))+1
-        
-        if(jogador_escolha == 1 && computador_escolha == 1){
-            ganhador=0
-        }
-        else if(jogador_escolha == 1 && computador_escolha == 2){
-            ganhador=2
-        }
-        else if(jogador_escolha == 1 && computador_escolha == 3){
-            ganhador=1
-        }
-        else if(jogador_escolha == 2 && computador_escolha == 1){
-            ganhador=1
-        }
-        else if(jogador_escolha == 2 && computador_escolha == 2){
-            ganhador=0
-        }
-        else if(jogador_escolha == 2 && computador_escolha == 3){
-            ganhador=2
-        }
-        else if(jogador_escolha == 3 && computador_escolha == 1){
-            ganhador=2
-        }
-        else if(jogador_escolha == 3 && computador_escolha == 2){
-            ganhador=1
-        }
-        else if(jogador_escolha == 3 && computador_escolha == 3){
-            ganhador=0
-        }
-        
-        /*document.getElementById("jogador-escolha-1").classList.remove('selecionado')
-        document.getElementById("jogador-escolha-2").classList.remove('selecionado')
-        document.getElementById("jogador-escolha-3").classList.remove('selecionado')
-        document.getElementById("computador-escolha-1").classList.remove('selecionado')
-        document.getElementById("computador-escolha-2").classList.remove('selecionado')
-        document.getElementById("computador-escolha-3").classList.remove('selecionado')
-
-        document.getElementById("jogador-escolha-" + jogador_escolha).classList.add('selecionado')
-        document.getElementById("computador-escolha-" + computador_escolha).classList.add('selecionado')*/
-
-        if(ganhador == 0){
-            document.getElementById("mensagens").innerHTML = 'Empate'
-        }
-        else if(ganhador == 1){
-            document.getElementById("mensagens").innerHTML = 'Jogador Ganhou'
-            jogadorPontuacao++
-        }
-        else if(ganhador == 2){
-            document.getElementById("mensagens").innerHTML = 'Computador Ganhou'
-            computadorPontuacao++    
-        }
-                
-        document.getElementById("jogador_pontos").innerHTML = jogadorPontuacao
-        document.getElementById("computador_pontos").innerHTML = computadorPontuacao
-    }
-</script>
 </html>

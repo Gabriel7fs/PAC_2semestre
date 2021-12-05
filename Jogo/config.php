@@ -1,9 +1,9 @@
 <?php
 
-    $dbHost='Localhost';
+    $dbHost='localhost';
     $dbUser= 'root';
     $dbPassword= '';
-    $dbName='formulario-pac';
+    $dbName='formulario';
 
     $conexao = mysqli_connect($dbHost, $dbUser, $dbPassword, $dbName);
 
